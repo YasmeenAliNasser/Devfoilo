@@ -1,0 +1,664 @@
+/* navbar */
+.navbar{
+    width: 90%;
+    margin: auto;
+    
+}
+.nav-link {
+    position: relative;  
+    color: #000;  
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: -5px; 
+    width: 0;
+    height: 2px;
+    background-color: white;  
+    transition: width 0.4s ease-in-out;
+     
+}
+.nav-link:hover::after {
+    width: 70%;
+}
+ul li a{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 600;
+} 
+ 
+#navbar {
+    position: fixed;
+    top: 0;
+    
+    z-index: 1000;  
+     
+}
+.navbar.scrolled {
+    background-color: white !important;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.995) ;
+    width: 100%;
+}
+
+.navbar.scrolled .nav-link {
+    color: black !important;
+}
+
+.navbar.scrolled .navbar-brand {
+    color: black !important;
+}
+
+/* home */
+.home-section{
+    background-color: #00000076;
+    background-image: 
+    url("https://themewagon.github.io/devfolio/img/intro-bg.jpg")  ;
+    background-position: center;
+    background-size: cover;
+    
+    background-attachment: fixed;
+    height: 100vh;
+  
+
+}
+.home-section{
+    position: relative;
+    overflow: hidden;
+    
+   
+}
+.home .layerh{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    background-color: #000
+
+}
+.home-section h1 ,.home-section p{
+    position: relative;
+    z-index: 2;
+}
+.home h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height:86px ;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.home p{
+    font-size: 30px;
+    font-weight: 400;
+    line-height:60px ;
+    text-align: center;
+}
+
+ 
+
+
+
+
+ 
+
+ 
+
+
+
+
+/* about */
+
+.about{
+    
+    background-color: #F5F5F5;
+    padding: 100px 0;
+}
+  
+ #about .container {
+    background-color: white !important;
+    padding: 10px;
+}
+
+.about   .image img{
+    border-radius: 5px;
+    width: 60%;
+    padding-top: 50px;
+    overflow: hidden;
+    
+}
+.about .user-info{
+    padding-left: -1000px;
+    margin: 0;
+    padding-top: 50px ;
+
+
+    
+}
+.about .user-info h6{
+    font-size: 16px;
+}
+.about .user-info span{
+    font-size: 14px;
+    font-weight: 300;
+    color: #272626;
+    line-height: 24px;
+}
+ 
+ .about .right h2{
+    position: relative;  
+    color: #000;  
+    text-decoration: none;
+    padding: 5px 10px;
+ }
+
+.about .right h2::before  {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+      
+    width: 20%;
+    height: 3px;
+    background-color: blue;  
+    transition: width 0.4s ease-in-out;
+    
+}
+ 
+.about .right p{
+    color: #272626;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+ 
+
+.about .progress {
+    height: 8px;  
+    margin-bottom: 5px; 
+    border-radius: 0;  
+}
+
+.about .progress-bar {
+    height: 8px;  
+    border-radius: 0; 
+}
+.about .spanpro{
+    color: #818181;
+    font-size: 13px;
+}
+
+/* service */
+.service{
+    background-color: #F5F5F5;
+    padding: 90px;
+}
+.service h2{
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight:700 ;
+    line-height:58px ;
+}
+.service p{
+    
+    font-size: 12px;
+    font-weight:400 ;
+    line-height:24px ;
+    color: #818181;
+}
+.service .cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    margin-left: 20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    border: none;
+  
+}
+.service .circle{
+    margin:  20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+    border: #1D6DC8 6px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+.service i{
+    font-size: 30px;
+}
+.service .circle:hover{
+   background-color: #1D6DC8;
+   border: #CDE1F8 10px solid;
+}
+.service .circle:hover i{
+    color: white;
+}
+
+/* numbers */
+.slide{
+    position: relative;
+    overflow: hidden;
+}
+.numbers{
+    background-image: url("https://themewagon.github.io/devfolio/img/post-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.numbers .container  {
+  width: 80%;
+  margin: auto;
+}
+.numbers .container .parts .part{
+    padding: 100px;
+    padding-left: 50px;
+     
+    color: white;
+    position: relative;
+    z-index: 99;
+    
+}
+
+.numbers .container .parts .part h3{
+  font-size:32px ;
+  font-weight:400 ;
+  line-height:48px ;
+}
+
+.numbers .container .parts .part p{
+    font-size:16px ;
+    font-weight:400 ;
+    line-height:24px ;
+  }
+
+.numbers .circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 8px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numbers .circle i{
+    line-height: 58px;
+    font-size: 30px;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: #0478fcbc;
+}
+
+.numbers .container .parts .part {
+   text-align: center;
+}
+
+
+/* protofilo */
+.protofilo{
+    background-color: #F5F5F5;
+    width: 100%;
+    padding: 90px;
+}
+.protofilo h2{
+    text-transform: uppercase;
+}
+  .line{
+
+    position: relative;  
+    color: #818181;  
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+  .line::before  {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+      
+    width: 5%;
+    height: 5px;
+    background-color: blue;  
+    transition: width 0.4s ease-in-out;
+    transform: translateX(300%);
+    padding-left: 20px;
+}
+.protofilo .container .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  
+    justify-content: center;  
+}
+.protofilo .container  .card{
+ 
+   overflow: hidden;
+   position: relative;
+   margin-top: 50px;
+   
+}
+.protofilo .container  .card img {
+    overflow: hidden;
+   position: relative;
+    width: 100%;  
+    transition: transform 1s ease-in-out;
+    object-fit: cover;
+}
+.protofilo .container  .card:hover img{
+    transform: scale(1.2);
+    transform-origin: center;
+    
+}
+.protofilo .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #4FA2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.protofilo .container  .card h5{
+    font-size:15px ;
+    font-weight:500 ;
+    line-height:23px ;
+}
+
+.protofilo .container  .card p{
+    font-size:11px ;
+    font-weight:400 ;
+    line-height:19px ;
+    color: #C6C6C6;
+}
+.protofilo .container  .card p span{
+    font-size:11px ;
+    font-weight:400 ;
+    line-height:19px ;
+    color: #4FA2FF;
+}
+
+.protofilo .container  .card .icon{
+    font-size:16px ;
+    font-weight:400 ;
+    line-height:24px ;
+    color: #4FA2FF;
+}
+
+/* slide2 */
+
+.slide2{
+    position: relative;
+    overflow: hidden;
+     
+    
+}
+.carousel  {
+    background-image: url("https://themewagon.github.io/devfolio/img/overlay-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+}
+.slide2 .layer{
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    background-color: #0478fcbc;
+    
+}
+.slide2 .content {
+    padding: 70px;
+    position: relative;
+    z-index: 90;
+}
+.slide2   .container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.slide2 .circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    background-color: white;
+    position: relative;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+.slide2 .circle i{
+    line-height: 58px;
+    font-size: 30px;
+    background-color: transparent;
+    color: #1D6DC8;
+}
+ 
+
+/* blog */
+.blog{
+    background-color: #F5F5F5;
+}
+.blog .container .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;  
+}
+.reg{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.reg p{
+    padding: 10px;
+    height: 30px;
+    background-color: #1D6DC8;
+    border-radius: 5px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
+    top: -10px;
+}
+
+.card-body a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    color: black;
+}
+.card-body a:hover{
+    color: #1D6DC8;
+}
+.card-body p{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #818181;
+}
+
+.footer .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    float: left;
+     
+}
+.footer {
+    display: flex;
+    gap: 2px;
+}
+.footer .creator{
+    float: left;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 1px;
+    padding-top: 10px;
+    
+}
+ .footer .time{
+    padding:9px 1px 10px 20px;
+    margin-left: 10px;
+    font-size: 13px;
+ }
+ .footer h5{
+    color: rgb(29, 29, 29);
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+ }
+ .footer h5:hover{
+    color: #1D6DC8;
+ }
+ 
+/* contact */
+.contact10{
+    position: relative;
+    overflow: hidden;
+}
+ .contact10 .about2{
+    
+    background-image:  url("https://themewagon.github.io/devfolio/img/overlay-bg.jpg");
+   background-position: center;
+   background-size: cover;
+   
+}
+.contact10 .container{
+    position: relative;
+    z-index: 22;
+}
+.contact10 .foot{
+    position: relative;
+    z-index: 22;
+}
+.contact10 .layer10{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+background-color: #0478fcbc;
+}
+
+.contact10 h2{
+position: relative;  
+color: #000;  
+text-decoration: none;
+padding: 5px 10px;
+}
+
+.contact10 h2::before  {
+content: "";
+position: absolute;
+bottom: -5px;
+  
+width: 30%;
+height: 3px;
+background-color: blue;  
+transition: width 0.4s ease-in-out;
+transform: translateX(1%);
+}
+.contact10 .circle5{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: #1D6DC8 3px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    gap: 2;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.contact10 p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #818181;
+}
+.foot h6{
+    font-size: 14px;
+    font-weight: 300;
+}
+.foot span{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contact10 .circle5:hover{
+    background-color: #1D6DC8;
+    border: #CDE1F8 5px solid;
+ }
+ .contact10 .circle5:hover i{
+     color: white;
+ }
+ .contact10 button{
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: all .3s ease-in-out; 
+ }
+ .contact10 button:hover {
+    outline: 5px solid #4fa1ff58; 
+   
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
